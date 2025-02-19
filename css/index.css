@@ -24,7 +24,14 @@ header {
     font-weight: bold;
 }
 
-nav ul {
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-links {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -33,14 +40,28 @@ nav ul {
     transform: translateX(-50%);
 }
 
-nav ul li {
+.nav-links li {
     margin: 0 15px;
 }
 
-nav ul li a {
+.nav-links li a {
     text-decoration: none;
     color: #333;
     font-size: 16px;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons a {
+    margin-left: 15px;
+}
+
+.nav-icons img {
+    width: 24px;
+    height: 24px;
 }
 
 .hero {
