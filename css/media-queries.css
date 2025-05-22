@@ -1,32 +1,35 @@
-
 /* Mobile devices (max-width: 600px) */
 @media (max-width: 600px) {
     header {
         flex-direction: column;
-        padding: 10px 20px;
+        padding: 14px 10px;
     }
 
     .logo {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
+        font-size: 22px;
     }
 
     .nav-links {
         flex-direction: column;
         position: static;
         transform: none;
+        gap: 0;
     }
 
     .nav-links li {
-        margin: 10px 0;
+        margin: 8px 0;
     }
 
     .nav-icons {
-        margin-top: 10px;
+        margin-top: 12px;
     }
 
     .hero {
         flex-direction: column;
-        padding: 20px;
+        padding: 18px 8px;
+        margin: 18px 0 0 0;
+        border-radius: 10px;
     }
 
     .text {
@@ -34,53 +37,70 @@
         text-align: center;
     }
 
+    .text h1 {
+        font-size: 30px;
+    }
+
+    .text p {
+        font-size: 15px;
+    }
+
     .image img {
         max-width: 100%;
-        margin-top: 20px;
+        margin-top: 18px;
+        padding: 6px;
     }
 
     .buttons {
         flex-direction: column;
+        gap: 10px;
+        align-items: center;
     }
 
     .buttons button {
-        margin: 10px 0;
+        margin: 0;
+        width: 90%;
+        font-size: 15px;
+        padding: 10px 0;
     }
 }
 
 /* Tablets (max-width: 768px) */
 @media (max-width: 768px) {
     header {
-        padding: 15px 30px;
+        padding: 12px 16px;
     }
 
     .nav-links {
         position: static;
         transform: none;
+        gap: 0;
     }
 
     .nav-links li {
-        margin: 0 10px;
+        margin: 0 8px;
     }
 
     .hero {
-        padding: 30px;
+        padding: 18px 10px;
+        border-radius: 12px;
     }
 
     .text h1 {
-        font-size: 36px;
+        font-size: 34px;
     }
 
     .text p {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .buttons button {
-        padding: 8px 16px;
-        font-size: 14px;
+        padding: 9px 12px;
+        font-size: 15px;
     }
 
     .image img {
-        max-width: 300px;
+        max-width: 220px;
+        padding: 6px;
     }
 }
