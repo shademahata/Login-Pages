@@ -14,7 +14,12 @@
     <header>
         <nav aria-label="Main Navigation">
             <div class="logo" aria-label="COFFEEIN Home">COFFEEIN.</div>
-            <ul class="nav-links" role="menubar">
+            <div class="hamburger" id="hamburger" aria-label="Toggle navigation" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" role="menubar" id="navLinks">
                 <li role="none"><a role="menuitem" href="#">Home</a></li>
                 <li role="none"><a role="menuitem" href="#">Product</a></li>
                 <li role="none"><a role="menuitem" href="#">Contact</a></li>
@@ -44,5 +49,19 @@
             </div>
         </section>
     </main>
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('open');
+    });
+    hamburger.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('open');
+        }
+    });
+    </script>
 </body>
 </html>
