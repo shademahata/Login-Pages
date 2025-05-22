@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COFFEEIN</title>
+    <title>COFFEEIN - Premium Coffee Experience</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/media-queries.css">
     <!--Icons start-->
@@ -12,35 +12,37 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">COFFEEIN.</div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About Us</a></li>
+        <nav aria-label="Main Navigation">
+            <div class="logo" aria-label="COFFEEIN Home">COFFEEIN.</div>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a role="menuitem" href="#">Home</a></li>
+                <li role="none"><a role="menuitem" href="#">Product</a></li>
+                <li role="none"><a role="menuitem" href="#">Contact</a></li>
+                <li role="none"><a role="menuitem" href="#">About Us</a></li>
             </ul>
-            <div class="nav-icons">
-                <a href="#"><i class="uil uil-search"></i></a>
-                <a href="#"><i class="uil uil-shopping-bag"></i></a>
-                <a href="./pages/login.html"><i class="uil uil-user"></i></a>
+            <div class="nav-icons" aria-label="User and Cart Actions">
+                <a href="#" aria-label="Search"><i class="uil uil-search"></i></a>
+                <a href="#" aria-label="Shopping Bag"><i class="uil uil-shopping-bag"></i></a>
+                <a href="./pages/login.html" aria-label="User Login"><i class="uil uil-user"></i></a>
             </div>
         </nav>
     </header>
     
-    <section class="hero">
-        <div class="text">
-            <h4>MAKE YOUR COFFEE FOR YOUR DAY</h4>
-            <h1>Get The Experience Of Making Your Own <i>Coffee</i></h1>
-            <p>Watch This Video As A Guide To What Tools You Need To Make Delicious Coffee To Drink Every Day</p>
-            <div class="buttons">
-                <button class="explore">Explore Product</button>
-                <button class="learn">Learn More</button>
+    <main>
+        <section class="hero" aria-label="Coffee Experience Hero">
+            <div class="text">
+                <h4>MAKE YOUR COFFEE FOR YOUR DAY</h4>
+                <h1>Get the Experience of Making Your Own <i>Coffee</i></h1>
+                <p>Watch this video as a guide to discover the essential tools you need to brew delicious coffee every day.</p>
+                <div class="buttons">
+                    <button class="explore" type="button" aria-label="Explore Products">Explore Products</button>
+                    <button class="learn" type="button" aria-label="Learn More">Learn More</button>
+                </div>
             </div>
-        </div>
-        <div class="image">
-            <img src="./Images/coffee.png" alt="Coffee Grinder">
-        </div>
-    </section>
+            <div class="image">
+                <img src="./Images/coffee.png" alt="Modern coffee grinder and fresh coffee beans" />
+            </div>
+        </section>
+    </main>
 </body>
 </html>
